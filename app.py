@@ -136,7 +136,7 @@ with tab_img:
                     full_prompt = [prompt_instruction, image]
                     result = generate_content_with_retry(
                         client=client,
-                        model='gemini-2.5-flash',
+                        model='gemini-3.6-flash',
                         contents=full_prompt
                     )
                     st.success("✨ สรุปเนื้อหาจากรูปภาพเรียบร้อยแล้ว!")
