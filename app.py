@@ -84,7 +84,7 @@ with tab_text:
                     full_prompt = [prompt_instruction, user_text]
                     result = generate_content_with_retry(
                         client=client,
-                        model='gemini-2.5-flash',
+                        model='gemini-3.6-flash',
                         contents=full_prompt
                     )
                     st.success("✨ สรุปเนื้อหาเรียบร้อยแล้ว!")
@@ -112,7 +112,7 @@ with tab_pdf:
                         full_prompt = [prompt_instruction, extracted_text]
                         result = generate_content_with_retry(
                             client=client,
-                            model='gemini-2.5-flash',
+                            model='gemini-3.6-flash',
                             contents=full_prompt
                         )
                         st.success("✨ สรุปเนื้อหาจาก PDF เรียบร้อยแล้ว!")
